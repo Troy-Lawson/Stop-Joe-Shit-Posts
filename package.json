@@ -1,0 +1,11 @@
+{
+    "name": "joe-shit-posts",
+    "version": "1.0.0",
+    "description": "Lets put a stop to shit posts from that tasteless mother fucker, Joe",
+    "main": "bot.js",
+    "author": "A concerned citizen",
+    "dependencies": {
+        "discord.js": "^11.4.2",
+        "winston": "^3.1.0"
+    }
+}
