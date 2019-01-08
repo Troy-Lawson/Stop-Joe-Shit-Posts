@@ -4,7 +4,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
 var logger = require('winston');
-var auth = require('./auth.json');
 var blockedMessages = [
     "Whoa! This post is way too funny for this Discord. I’m gonna need to remove this.",
     "Great find Joe! I’m going to move this link from this Discord to my own personal stash.",
@@ -62,4 +61,4 @@ client.on('message', msg => {
    }*/
 });
   
-client.login(auth.token);
+client.login(process.env.DISCORD_BOT_KEY);
