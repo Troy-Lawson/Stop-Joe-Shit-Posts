@@ -2,10 +2,20 @@
     "name": "joe-shit-posts",
     "version": "1.0.0",
     "description": "Lets put a stop to shit posts from that tasteless mother fucker, Joe",
+    "engines": {
+        "node" : "10.x"
+    },
     "main": "bot.js",
+    "scripts": {
+        "start": "node bot.js"
+    },
     "author": "A concerned citizen",
     "dependencies": {
         "discord.js": "^11.4.2",
         "winston": "^3.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Troy-Lawson/Stop-Joe-Shit-Posts.git"
     }
 }
