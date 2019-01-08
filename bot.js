@@ -32,7 +32,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     
-   if(msg.author.tag === 'Cyns#4059'){
+   if(msg.author.tag === 'Cyns#4059' || msg.author.tag === 'kingpin480#1462'){
       /* let user = {
            id: msg.author.id,
            tag: msg.author.tag,
@@ -56,7 +56,6 @@ client.on('message', msg => {
         
       
    } 
- 
 });
   
 client.login(process.env.DISCORD_BOT_KEY);
