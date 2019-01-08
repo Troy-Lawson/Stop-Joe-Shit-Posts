@@ -14,10 +14,10 @@ var blockedMessages = [
     "Hey! That meme was too spicy for Discord! Please keep in mind this is a clean Christian Discord server.",
     "This is an inclusive Discord, and I don’t think everyone will understand this meme so I put it away.",
     "This looks a little too much like anime. I’m going to remove it just in case!",
-    "It is currently :tobe:Real Tofu Hour :tobe: This Discord is only accepting :tobe: Tofu Chan :tobe: links Your link has been removed, while we respect this sacred hour.",
+    "It is currently :tobe: Real Tofu Hour :tobe: This Discord is only accepting :tobe: Tofu Chan :tobe: links Your link has been removed, while we respect this sacred hour.",
     "Hold up mister! Only those who have watched season 2 of “Jojo’s Bizarre Adventure” are permitted to post links.",
     "STOP! You’ve violated the law. Your links to 9gag are now forfeit.",
-    ]
+    ];
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console, {
@@ -33,7 +33,7 @@ client.on('ready', () => {
 client.on('message', msg => {
     
    if(msg.author.tag === 'Cyns#4059'){
-       let user = {
+      /* let user = {
            id: msg.author.id,
            tag: msg.author.tag,
            username: msg.author.username,
@@ -42,7 +42,7 @@ client.on('message', msg => {
        };
 
        let data = JSON.stringify(user);
-       fs.writeFileSync('user.json', data);
+       fs.writeFileSync('user.json', data);*/
 
        if(msg.content.toLowerCase().includes('9gag')){
            msg.delete();
@@ -54,11 +54,10 @@ client.on('message', msg => {
         }
        }*/
         
-       //msg.reply('No Troy allowed');
+      
    } 
-   /*if (msg.content === 'ping') {
-     msg.reply('Pong! '+msg.author.discriminator);
-   }*/
+ 
 });
   
 client.login(process.env.DISCORD_BOT_KEY);
+
