@@ -43,8 +43,8 @@ client.on('message', msg => {
 
        let data = JSON.stringify(user);
        fs.writeFileSync('user.json', data);*/
-
-       if(msg.content.toLowerCase().includes('9gag')){
+	   var tod = new Date().getHours();
+       if(msg.content.toLowerCase().includes('9gag') || ((tod >= 8 && tod <= 16) && (msg.type === "photo" || msg.attachments))){
            msg.delete();
            var message = blockedMessages[Math.floor(Math.random(0,blockedMessages.length-1)*10)];
            msg.channel.send(message);
